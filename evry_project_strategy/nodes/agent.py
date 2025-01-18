@@ -124,8 +124,7 @@ def run_demo():
 
 
     rospy.sleep(0.5)
-    # Timing strategy
-    #rospy.sleep(3*int(robot_name[-1]))
+    
     while not rospy.is_shutdown():
         # Strategy
         velocity = 2
@@ -140,11 +139,6 @@ def run_demo():
             velocity=0
         else:
             velocity= distance*Kp_linear
-        # print(distance)
-
-        ##Robust startegy
-        print(obst_distance)
-
         
         # Finishing by publishing the desired speed. 
         # DO NOT TOUCH.
