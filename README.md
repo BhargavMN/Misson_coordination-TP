@@ -62,14 +62,14 @@ This strategy uses a PID controller to adjust the robot's speed and angle for na
 #### **Timing Strategy**
 Run the timing strategy with multiple robots:
 ```bash
-roslaunch evry_project_strategy agent_timing.launch nbr_robot:=2
+roslaunch evry_project_strategy agent_timing.launch
 ```
 In this strategy, each robot starts with a delay proportional to its identifier, reducing the risk of collisions.
 
 #### **Robust Strategy**
 Run the robust strategy for enhanced navigation:
 ```bash
-roslaunch evry_project_strategy agent_robust.launch nbr_robot:=3
+roslaunch evry_project_strategy agent_robust.launch 
 ```
 This strategy uses dual PID controllers for speed and angle adjustments, along with advanced obstacle avoidance mechanisms.
 
