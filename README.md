@@ -23,7 +23,7 @@ The project aims to simulate and control multiple robots navigating to their res
 
 1. **Basic PID Control**: A single robot navigates to its target using a PID controller.
 2. **Timing Strategy**: Multiple robots start with delays to minimize collisions.
-3. **Robust Strategy**: Advanced navigation with dual PID controllers and enhanced obstacle avoidance.
+3. **Robust Strategy**: Advanced navigation with PID controller and obstacle avoidance.
 
 ---
 
